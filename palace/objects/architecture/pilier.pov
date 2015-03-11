@@ -1,5 +1,5 @@
 //---------------------------------------------//
-//  PALACE.pov                                 //
+//  pilier.pov                                 //
 //---------------------------------------------//
 
 //-----------------------------------------------
@@ -23,7 +23,7 @@
 
                     //  Position :
 
-                        #declare Camera_Location = <0.00, 1.00, -3.00> ;
+                        #declare Camera_Location = <0.00, 1.75, -10.00> ;
 
                     //  Direction :
 
@@ -41,11 +41,11 @@
 
                     //  Position :
 
-                        #declare Camera_Location = <2.00, 2.5, -13.00> ;
+                        #declare Camera_Location = <2.00, 2.5, -10.00> ;
 
                     //  Direction :
 
-                        #declare Camera_Look_At = <5.00, 1.00, 0.00> ;
+                        #declare Camera_Look_At = <0.00, 1.00, 0.00> ;
 
                     //  Angle : 
 
@@ -134,39 +134,12 @@
     
 //-----------------------------------------------
 
-//  VARIABLES
-
-    //  Bâtikment 1
-
-        //  Epaisseur des murs bat1
-
-            #declare epaisseur_mur_bat_1 = 0.5 ;
-
 //  INCLUDE
 
-    //  Landscape
-
-        #include "53_Sunset_sky1.inc"
-
-    //  Objets
-
-        //  Architectures
-
-            #include "objects/architecture/parquet.inc"
-            #include "objects/architecture/pilier.inc"
-            #include "objects/architecture/murs.inc"           
-
-
-    //  Bâtiments
-
-        //  Bâtiment 1
-
-            #include "batiments/batiment1/batiment1.inc"
-
-
-
-
-
-
+    #include "53_Sunset_sky1.inc"
+    #include "objects/architecture/pilier.inc"
 
 //-----------------------------------------------
+
+Faire_Pilier(0.5, 4, White_Marble)
+
